@@ -14,7 +14,8 @@ public class Main extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        web = (WebView) 
+        web = (WebView) findViewById(R.id.webView);
+        web.loadUrl("file:///android_asset/www/index.html");
     }
 
 
